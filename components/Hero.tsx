@@ -41,7 +41,7 @@ export default function Hero() {
         className="absolute inset-0 -z-20"
       >
         <Image
-          src="/hero-img.jpg"
+          src="/images/heroimg.jpg"
           alt="Arbetsplats med datorskärmar, rött bakgrundsljus och anteckningar"
           fill
           priority
