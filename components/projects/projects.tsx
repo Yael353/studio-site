@@ -33,7 +33,7 @@ export default function Projects() {
         if (!desktop || !motion) return;
 
         const getDistance = () =>
-          Math.max(0, track.scrollWidth - section.clientWidth);
+          Math.max(0, track.scrollWidth - section.clientWidth + 10);
 
         const tween = gsap.to(track, {
           x: () => -getDistance(),

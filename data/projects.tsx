@@ -32,6 +32,14 @@ const projects = [
     link: "https://github.com/Yael353/fastighetsportal",
   },
   {
+    title: "Carrot Cake News",
+    category: "Nyhetssida",
+    description:
+      "En fullskalig nyhetssajt i C# och ASP.NET Core MVC med rollbaserad autentisering och molnlagring i Azure.",
+    image: "/images/ccn.png",
+    link: "https://github.com/Gr-25-17/CCN",
+  },
+  {
     title: "Hivify",
     category: "SaaS-plattform",
     description:
