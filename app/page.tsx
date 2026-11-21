@@ -1,8 +1,7 @@
 "use client";
-import { useRef } from "react";
-import { useScroll, useTransform } from "framer-motion";
-import Hero from "@/components/Hero";
-import Positioning from "@/components/positioning";
+
+import Hero from "@/components/hero/hero";
+import Positioning from "@/components/positioning/positioning";
 import Projects from "@/components/projects/projects";
 import Services from "@/components/services/services";
 import Contact from "@/components/Contact";
