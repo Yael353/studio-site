@@ -4,7 +4,7 @@ import Hero from "@/components/hero/hero";
 import Positioning from "@/components/positioning/positioning";
 import Projects from "@/components/projects/projects";
 import Services from "@/components/services/services";
-import Contact from "@/components/Contact";
+import Contact from "@/components/contact/Contact";
 
 export default function page() {
   return (
