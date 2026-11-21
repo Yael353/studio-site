@@ -49,7 +49,10 @@ export function ContactForm({
         />
 
         <div className="mt-9">
-          <label htmlFor="contact-message" className="font-sans text-sm text-ink">
+          <label
+            htmlFor="contact-message"
+            className="font-sans text-sm text-ink"
+          >
             Ditt meddelande *
           </label>
           <textarea
@@ -81,11 +84,27 @@ export function ContactForm({
         />
       </div>
 
-      {error && <p role="alert" className="mt-8 font-sans text-sm text-red-700">{error}</p>}
+      {error && (
+        <p role="alert" className="mt-8 font-sans text-sm text-red-700">
+          {error}
+        </p>
+      )}
 
       <div className="mt-10 flex flex-col items-start justify-between gap-7 sm:flex-row sm:items-center">
-        <p className="max-w-xs font-sans text-xs leading-relaxed text-ink-muted">
-          Dina uppgifter används för att besvara din förfrågan. Inget bindande åtagande.
+        <p className="max-w-md font-sans text-xs leading-relaxed text-ink-muted">
+          När du skickar ett meddelande använder jag dina uppgifter för att
+          besvara din förfrågan. Formuläret hanteras via Formspree, som tar emot
+          och lagrar meddelandet. Vid frågor om dina uppgifter kan du kontakta
+          mig via min angivna mejladress. Läs mer i{" "}
+          <a
+            href="https://formspree.io/legal/privacy-policy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4 transition-colors hover:text-ink"
+          >
+            Formsprees integritetspolicy
+          </a>
+          .
         </p>
 
         <motion.button
@@ -97,7 +116,12 @@ export function ContactForm({
           className="group inline-flex items-center justify-between gap-10 rounded-button bg-ink px-7 py-4 font-sans text-sm font-medium text-canvas transition-colors duration-300 hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent disabled:cursor-not-allowed disabled:opacity-60"
         >
           {status === "sending" ? "Skickar..." : "Skicka förfrågan"}
-          <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+          <span
+            aria-hidden="true"
+            className="transition-transform duration-300 group-hover:translate-x-1"
+          >
+            ↗
+          </span>
         </motion.button>
       </div>
     </form>
