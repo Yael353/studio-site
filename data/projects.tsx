@@ -43,7 +43,7 @@ const projects = [
     title: "Hivify",
     category: "SaaS-plattform",
     description:
-      "Skalbar plattform med Clean Architecture, CQRS och multi-tenant isolering.",
+      "En skalbar SaaS-plattform för föreningar, byggd i C# och .NET med Clean Architecture, DDD och CQRS, samt en modern frontend i Next.js med Zod och PWA-stöd.",
     image: "/images/hivify.jpg",
     link: "https://github.com/Hivify",
   },
